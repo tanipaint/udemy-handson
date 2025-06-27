@@ -25,7 +25,7 @@ const FormInput = () => {
     // Send message to the OpenAI
     const url = '/api/rag-extra-1';
     console.log('🚀 ~ sendMessage ~ url:', url);
-    const response = await fetch(`${process.env.NEXT_PUBLIC_URL}${url}`, {
+    const response = await fetch(`${url}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
