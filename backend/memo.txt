@@ -1,0 +1,15 @@
+
+
+python --version
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+source ~/.bashrc
+
+brew tap azure/functions
+
+brew install azure-functions-core-tools@4
+
+pip install -r requirements.txt
